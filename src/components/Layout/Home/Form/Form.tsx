@@ -107,6 +107,10 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
     setForm(initialForm);
   };
 
+  const handleCleanLocation = () => {
+    handleChangeFormValue("location", "");
+  };
+
   const getFilters = () => {
     const { makes, models, versions } = availableValues;
     return {
@@ -182,7 +186,7 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
           <Row>
             <TextInput
               RightComponent={
-                <CloseButton>
+                <CloseButton onClick={handleCleanLocation}>
                   <FaTimesCircle color={theme.palette.text.primary} />
                 </CloseButton>
               }
