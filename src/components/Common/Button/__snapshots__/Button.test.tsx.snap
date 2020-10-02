@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render without an error 1`] = `
+<div>
+  <button
+    class="sc-gtssRu bSbDmz"
+    color="primary"
+  >
+    <p>
+      ButtonComponent
+    </p>
+  </button>
+</div>
+`;

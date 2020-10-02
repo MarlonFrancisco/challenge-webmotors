@@ -1,10 +1,12 @@
 import React from "react";
 import { Spin } from "./styles";
 
-type LoaderProps = {
+export type LoaderProps = {
   size?: number;
 };
 
-const Loader: React.FC<LoaderProps> = ({ size = 30 }) => <Spin size={size} />;
+const Loader: React.FC<LoaderProps> = ({ size = 30 }) => (
+  <Spin data-testid="loader-test" size={size} />
+);
 
 export default Loader;

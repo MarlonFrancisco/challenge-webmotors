@@ -107,9 +107,9 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
     setForm(initialForm);
   };
 
-  const handleSubmitForm = () => {
+  const getFilters = () => {
     const { makes, models, versions } = availableValues;
-    onSubmit({
+    return {
       make: makes.find((make) => make.ID === form.make)?.Name,
       model: models.find((model) => model.ID === form.model)?.Name,
       version: versions.find((version) => version.ID === form.version)?.Name,
@@ -117,7 +117,12 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
       mileage: Mileage.find((mileage) => mileage.ID === form.mileage)?.Name,
       priceRange: PriceRange.find((price) => price.ID === form.priceRange)
         ?.Name,
-    });
+    };
+  };
+
+  const handleSubmitForm = () => {
+    const filters = getFilters();
+    onSubmit(filters);
   };
 
   useEffect(() => {

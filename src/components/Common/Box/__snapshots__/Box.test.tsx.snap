@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box should render without an error 1`] = `
+<div>
+  <div
+    class="sc-bdnylx gQvYhD"
+  >
+    <p>
+      BoxComponent
+    </p>
+  </div>
+</div>
+`;

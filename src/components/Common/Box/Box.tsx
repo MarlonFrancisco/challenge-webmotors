@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
 import { Container } from "./styles";
 
-type BoxProps = {
+export type BoxProps = {
   style?: CSSProperties;
 };
 

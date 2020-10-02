@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select should render without an error 1`] = `
+<div>
+  <div
+    class="sc-bdnylx bzntss"
+  >
+    <button
+      class="sc-gtssRu cSEATA"
+    >
+      <div
+        style="display: flex;"
+      >
+        <h1
+          style="font-size: 12px; color: rgb(132, 131, 131); font-weight: 600; text-align: center;"
+        >
+          Todos
+        </h1>
+      </div>
+      <svg
+        color="#848383"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        style="color: rgb(132, 131, 131);"
+        viewBox="0 0 320 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"
+        />
+      </svg>
+    </button>
+    <div
+      class="sc-dlnjPT irWVGS select__body"
+    >
+      <button
+        class="sc-hKFyIo dQSCIi"
+      >
+        Todos
+      </button>
+      <button
+        class="sc-hKFyIo dQSCIi"
+      >
+        Test
+      </button>
+    </div>
+  </div>
+</div>
+`;

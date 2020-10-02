@@ -2,7 +2,7 @@ import React, { CSSProperties } from "react";
 import { Loader } from "../Loader";
 import { SCButton } from "./styles";
 
-type ButtonProps = {
+export type ButtonProps = {
   variant?: "contained" | "outlined" | "text";
   color?: "primary" | "secondary";
   style?: CSSProperties;

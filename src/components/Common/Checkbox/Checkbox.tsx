@@ -2,7 +2,7 @@ import React, { CSSProperties } from "react";
 import { Typography } from "../Typography";
 import { CustomCheckbox, Container } from "./styles";
 
-type CheckboxProps = {
+export type CheckboxProps = {
   onChange: (isChecked: boolean) => void;
   checked: boolean;
   label: string;

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, memo } from "react";
 import { Typography } from "../Typography";
 import { Container, SelectBody, SelectItem, SelectButton } from "./styles";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
@@ -6,7 +6,7 @@ import { useTheme } from "styled-components";
 
 type Option = { Name: string; ID: number };
 
-type SelectProps = {
+export type SelectProps = {
   LeftComponent?: React.ReactNode;
   items: Option[];
   onChange: (id: number) => void;
@@ -88,4 +88,4 @@ const Select: React.FC<SelectProps> = ({
   );
 };
 
-export default Select;
+export default memo(Select);

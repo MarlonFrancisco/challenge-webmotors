@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
 import { useTheme } from "styled-components";
 
-type TypographyProps = {
+export type TypographyProps = {
   variant?: "p" | "span" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   style?: CSSProperties;
   color?: "primary" | "secondary";

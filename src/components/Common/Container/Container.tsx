@@ -6,7 +6,7 @@ enum Breakpoints {
   md = 768,
 }
 
-type ContainerProps = {
+export type ContainerProps = {
   maxWidth: "lg" | "md";
 };
 

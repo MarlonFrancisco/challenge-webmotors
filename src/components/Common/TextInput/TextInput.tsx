@@ -1,7 +1,7 @@
 import React, { ChangeEvent, ReactNode } from "react";
 import { Input, Container } from "./styles";
 
-type TextInputProps = {
+export type TextInputProps = {
   RightComponent?: ReactNode;
   LeftComponent?: ReactNode;
   value: string;
